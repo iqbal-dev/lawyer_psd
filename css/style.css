@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Open+Sans:300,400,700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizzing:border-box;
+  -o-box-sizing: border-box;
+
+}
+
+body{
+ font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+  width: 1100px;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+li{
+  list-style-type: none;
+ 
+}
+a{
+   text-decoration: none;
+}
+img{
+  max-width: 100%;
+  display: block;
+  margin: 0em;
+  padding: 0em;
+
+}
+/* header section start */
+header{
+  
+padding: 32px 0;
+}
+header .row{
+  align-items: center;
+}
+/* logo section */
+.logo{
+  flex-basis: 30%;
+  max-width: 30%;
+}
+.logo a{
+  color:#28377e;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+/* logo section */
+/* menu section */
+nav{
+  
+  flex-basis: 70%;
+  max-width: 70%;
+}
+nav ul{
+  justify-content: flex-end;
+}
+
+nav ul li{
+
+}
+nav ul li a{
+    color: #204f87;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 12px;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+
+}
+/* menu section */
+/* header section end */
+
+
+.banner-section{
+  position: relative;
+  overflow: hidden;
+}
+.banner_orange{
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.banner_content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+}
+.banner_content h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 81px;
+  color: #ffffff;
+  text-transform: uppercase;
+  max-width: 800px;
+}
+.click-down{
+  
+position: absolute;
+  
+bottom: 80px;
+  
+right: 50%;
+  
+transform: translate(50%);
+  
+font-size: 36px;
+  
+color: #fff;
+  
+animation-name: click;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+@keyframes click{
+  0%{
+    bottom: 80px;color: #ffffff;
+
+  }
+  50%{
+    bottom: 40px;color: blue;
+
+  }
+  100%{
+    bottom: 80px;
+    color: red;
+  }
+}
+
+.who_are_you_section .row{
+ justify-content: space-between;
+}
+.who_are_you_section{
+    padding: 130px 0 200px;
+}
+.who_are_you_content{
+    max-width: 60%;
+    flex-basis: 60%;
+    
+}
+.heading span{
+    max-width: 60px;
+    height: 4px;
+    background: #f2622c;
+    display: block;
+}
+.heading h1{
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1f4f87;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 27px 0 35px;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #616ca8;
+    margin-bottom: 35px;
+    margin: 0;
+}
+.who_are_you_img{
+    max-width: 30%;
+    flex-basis: 30%;
+}
+.who_are_you_img img{}
+
+
+
+.what_we_do_section{
+    background-color: #f7f8f8;
+    padding: 80px 0px 120px;
+    background-image: url(../images/whatwedo-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.what_we_do_section .heading{}
+.what_we_do_section .heading span{
+    margin: 0 auto;
+}
+.what_we_do_section .heading h1{
+    text-align: center;
+}
+
+.what_we_do{
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+    padding: 10px;
+}
+.what_we_do_content{
+    position: relative;
+}
+.what_we_do_content img{
+    width: 100%;
+}
+.what_we_do_content h2{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    
+    /* left: 50%; */
+    /* transform: translate(-50%); */
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 700;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.what_we_do_content:hover h2{
+
+     left: 50%;
+     transform: translateX(-50%);
+     opacity: 1;
+}
+.what_we_do_content a{
+    color: #fff;
+    position: absolute;
+    bottom: 80px;
+     left: 30%;
+    transform: translate(-30%);
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.what_we_do_content:hover a{
+      left: 50%;
+    transform: translate(-50%);
+    opacity: 1;
+}
+.what_we_do_content span{
+    width: 100%;
+    height: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,1e5799+76 */
+    background: #7db9e8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7db9e8 0%, #1e5799 76%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #7db9e8 0%,#1e5799 76%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #457eab 0%,#0b36788a 76%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+    display: block;
+    bottom: 0;
+    position: absolute;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+.what_we_do_content:hover span{
+    height:100%; 
+    bottom: 0;
+    opacity: 1;
+
+}
+
+
+.attorneys_section{
+    background-image: url(../images/attorney-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+.attorneys_heading{
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+    padding-top: 100px;
+}
+.attorneys_heading .heading{}
+.attorneys_heading .heading h1{
+    color: #fff;
+    max-width: 225px;
+}
+.attorneys_heading .heading p{
+    max-width: 300px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.attorneys_heading .heading span{}
+
+.link_more{
+    color: #f2622c;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.attorneys{
+    max-width: 66.66%;
+    flex-basis: 66.66%;
+}
+.attorney{
+    max-width: 50%;
+    flex-basis: 50%;
+    padding: 15px 10px;
+}
+.attorney_detail{
+    position: relative;
+}
+.attorney_detail img{
+    width: 100%;
+}
+.attorney_detail h2{
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    color: #c46262;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.attorney_detail:hover h2{
+      bottom: 50px;
+      opacity: 1;
+}
+.attorney_detail span{
+    width: 100%;
+    height: 0;
+    display: block;
+    position: absolute;
+    background: #7db9e8;
+    background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 76%);
+    background: -webkit-linear-gradient(top, #7db9e8 0%,#1e5799 76%);
+    background: linear-gradient(to bottom, #457eab 0%,#0b36788a 76%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 );
+    bottom: 0;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.attorney_detail:hover span{
+     height: 100%;
+     opacity: 1;
+}
+
+/********langauages********/
+.laguages_section{
+  padding: 130px 0;
+
+}
+.languages{
+    max-width: 25%;
+    flex-basis: 25%;
+    padding: 10px;
+}
+.languages h1{
+    color: #28377e;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    padding-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+.languages p{}
+.laguages_section .heading span{
+    margin: 0 auto;
+}
+.laguages_section .heading h1{
+    text-align: center;
+}
+/*languages*/
+
+/*footer*/
+footer{
+    background: #28377e;
+}
+footer .heading span{
+    margin: 0 auto;
+}
+footer .heading h1{
+    color: #fff;
+    text-align: center;
+}
+footer .row{
+    justify-content: center;
+}
+.contact_us{
+    background: #28377e;
+    padding-top: 100px;
+}
+.contact{
+    max-width: 50%;
+    flex-basis: 50%;
+    text-align: center;
+}
+form{
+
+}
+.contact input,.contact textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #4759a7;
+    background: transparent;
+    color: #fff;
+}
+.contact input[type="submit"]{
+    /* width: auto; */
+    background: #f2622c;
+    max-width: 210px;
+    height: 45px;
+    border-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact input:focus,.contact textarea:focus{
+  outline: none;
+  border: 2px solid #4759a7;
+}
+.submit{}
+
+::placeholder{
+  color: #fff;
+}
+.footer_bottom{
+    background: #0c1234;
+    padding: 49px 0;
+    margin-top: 90px;
+}
+.copyright{
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.copyright p{}
+.social_list{
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.social_list ul{
+    justify-content: flex-end;
+}
+.social_list ul li{margin-left: 15px;}
+.social_list ul li a{
+    color: #616ca8;
+    display: block;
+}
+.social_list ul li a:hover{}
+/*footer*/
+
+
+
+
